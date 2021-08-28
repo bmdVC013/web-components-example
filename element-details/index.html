@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>element-details - web component using &lt;template&gt; and &lt;slot&gt;</title>
+  <style>
+    dl { margin-left: 6px; }
+    dt { font-weight: bold; color: #217ac0; font-size: 110% }
+    dt { font-family: Consolas, "Liberation Mono", Courier }
+    dd { margin-left: 16px }
+  </style>
+</head>
+<body>
+  <h1>element-details - web component using <code>&lt;template&gt;</code> and <code>&lt;slot&gt;</code></h1>
+
+  <element-details>
+    <span slot="element-name">slot</span>
+    <span slot="description">A placeholder inside a web
+      component that users can fill with their own markup,
+      with the effect of composing different DOM trees
+      together.</span>
+    <dl slot="attributes">
+      <dt>name</dt>
+      <dd>The name of the slot.</dd>
+    </dl>
+  </element-details>
+
+  <script src="main.js"></script>
+</body>
+</html>
